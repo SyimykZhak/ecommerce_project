@@ -4,17 +4,17 @@
     Products
 {% endblock %}
 {% block content %}
-    <div id="sidebar">
-        <h3>Categories</h3>
+    <div id="container p-3 my-3 border">
+<!--        <h3>Categories</h3>-->
         <ul>
         </ul>
     </div>
-    <div id="main" class="product-list">
-        <h1>Products</h1>
+    <div id="main" class="container p-3 my-3 border">
+        <h1>Книги</h1>
         {% for product in products %}
-            <div class="item">
+            <div class="container p-3 my-3 border">
                 <a href="{{ product.get_absolute_url }}">
-                    <img src="{{ product.image.url }}" class="img-thumbnail" width="100px" height="100px">
+                    <img src="{{ product.image.url }}" class="img-fluid" height="20%" width="20%">
                 </a>
                 <br>
 
